@@ -1,0 +1,49 @@
+<html>
+
+<head>
+    <title>Calculadora IMC</title>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <script>
+        let peso;
+        peso = window.prompt("Digite o seu peso em Kg: ");
+        let altura;
+        altura = window.prompt("Digite a sua altura em M: ");
+        let IMC = peso / altura ** 2;
+        IMC *= 100
+        IMC = Math.round(IMC) // A função Round do objeto Math, arredonda para números inteiros
+        IMC = IMC / 100         // É necessário aumentar o número como o Ex: 4,778952 para 477,8952 com o Math.Round fica 478 dividido por 100 fica 4,78 
+        console.log("Seu IMC é: ", IMC);
+        alert("Seu IMC é: " + IMC);
+
+        if (IMC < 18.5) {
+            console.log("Você está abaixo do peso normal")
+            alert("Peso Normal")
+        } else if (IMC <= 24.99) {
+            console.log("Você está no peso ideal")
+            alert("Você está no peso ideal")
+        } else if (IMC <= 30) {
+            console.log("Você está acima do peso")
+            alert("Obesidade Grau III")
+        } else if (IMC <= 35) {
+            console.log("Você está com Obesidade Grau I")
+            alert("Obesidade Grau III")
+        } else if (IMC <= 40) {
+            console.log("Você está com Obesidade Grau II")
+            alert("Obesidade Grau III")
+        } else if (IMC > 40) {
+            console.log("Você está com Obsedidade Grau III")
+            alert("Obesidade Grau III")
+        }
+
+    </script>
+</head>
+
+<body>
+    <h1>Calculadora de IMC</h1>
+</body>
+
+
+
+
+
+</html>

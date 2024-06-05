@@ -1,0 +1,40 @@
+<html>
+
+<head>
+    <title>Consumo</title>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <script>
+        /*
+        Crie um algoritmo que receba o km inicial, o km final, o preço da gasolina e a autonomia do veículo
+
+        ao final deve exibir a distância percorrida, quantidade de litros gastos e o custo da viagem
+        */
+        let kmInicial = window.prompt("Digite o Km inicial da viagem:");
+        kmInicial = Number(kmInicial);
+        let kmFinal = window.prompt("Digite o Km Final da viagem:");
+        kmFinal = Number(kmFinal);
+        let gasosa = window.prompt("Informe o preço da gasolina: ");
+        gasosa = Number(gasosa);
+        let Diffkm = kmFinal - kmInicial
+        let Autonomia = window.prompt("Informe a autonomia do seu carro em Km/l");
+        let calculo = Diffkm / Autonomia * gasosa;
+        console.log("Km inicial foi: ", kmFinal)
+        console.log("Km final foi: ", kmFinal)
+        console.log("A gasolina custa: ", gasosa, " R$")
+        alert("O custo total da viagem foi de: " + calculo);
+        alert("A distância percorrida foi de: "+ Diffkm+"Km")
+        alert("O custo da gasolina foi de: "+calculo/gasosa)
+
+
+    </script>
+
+
+</head>
+
+<body>
+
+</body>
+
+
+
+</html>
