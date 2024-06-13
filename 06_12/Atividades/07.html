@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt_Br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exc.07</title>
+
+    <script>
+
+        let Num = 0;
+
+        let Num_Negt = 0;
+
+        let Num_Posi = 0;
+
+        for (let x = 0; x < 10; x++)
+        {
+            Num = prompt("Digite dez números um de cada vez: ")
+
+            if(Num >= 0)
+            {
+                Num_Posi = Num_Posi + 1
+            }
+            else
+            {
+                Num_Negt = Num_Negt + 1
+            }
+           
+        }    
+        console.log("Um total de "+ Num_Posi + " números positivos")
+        console.log("Um total de "+ Num_Negt + " números negativos")
+
+    </script>
+
+</head>
+<body>
+    
+</body>
+</html>

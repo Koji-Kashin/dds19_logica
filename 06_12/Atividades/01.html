@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt_Br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exc.01</title>
+    <script>
+        
+        let Notas;
+
+        let Notas_Geral = 0;
+
+        let Media;
+
+        
+        for (let x = 0; x < 4; x++){
+        Notas = Number(prompt("Prezado aluno digite suas notas"))
+        Notas_Geral = Notas_Geral + Notas
+        console.log(Notas_Geral)
+        }
+        Media = Notas_Geral / 4
+        console.log(Media)
+        if(Media >= 7){
+        alert("Você está aprovado")
+    }
+        else if(Media >=5 && Media < 7)
+        alert("Você está de recuperação")
+
+        else if(Media < 5)
+        alert("Você está reprovado")
+
+       
+
+
+
+    </script>
+</head>
+
+<body>
+    
+</body>
+</html>
