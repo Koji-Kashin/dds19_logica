@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt_Br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exc.10</title>
+
+    <script>
+
+        let n = []
+        let me_Num = 0
+        let ma_Num = 0
+
+        for (let x = 0; x < 10; x++)
+         {
+            n[x] = Number(prompt("Digite dez números que mostraremos o menor e o maior deles"))
+            console.log(n[x])
+            
+            if(me_Num == 0)
+             {
+                me_Num = n[x]
+
+             }else{
+                if (me_Num > n[x])
+                {
+                    me_Num = n[x]
+                }
+
+                
+             }
+             if(ma_Num < n[x])
+             {
+                ma_Num = n[x]
+
+             }
+             
+        
+         }
+        
+
+            alert("O menor número é: "+me_Num+" e o maior número é: "+ma_Num)
+    </script>
+
+</head>
+
+<body>
+
+</body>
+
+</html>
